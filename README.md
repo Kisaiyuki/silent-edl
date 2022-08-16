@@ -31,7 +31,8 @@ It may work with later versions of ffmpeg or python, but the developer
 has only used Python 3.7 and bleeding-edge builds of ffmpeg 5.x
 
 You can save yourself a headache and use the windows build under releases
-if you do not know how to use or install python
+if you do not know how to use or install python. You will need FFMPEG,
+place it in the same directory or in your path.
 
 The EDL's generated have only been tested in Davinci Resolve Studio 18
 Davinci Resolve is also available for free
