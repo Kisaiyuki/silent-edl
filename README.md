@@ -69,3 +69,12 @@ framerate = 60.0
 
 A demonstration of how to use is here:
 https://youtu.be/Ga8VQINrLAQ
+
+edl-to-clips.py:
+This is a python script to do the entire Edit Decision List to clips, 
+and then produce a subsequent EDIT video. Don't use this script 
+except as a way to preview. It is not recommended to use this as an
+alternative to a full NLE. Uploading files created this way to 
+youtube will result in videos that are the same length or longer than 
+the videos, and are effectively unsable.
+
