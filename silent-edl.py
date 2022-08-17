@@ -182,7 +182,7 @@ for inputfile in sys.argv[1:]:
             if float(datafps[0]) >0.0:
                 framerate=float(datafps[0])
             print(f"FPS: {framerate}")
-            config.set('work','framerate',framerate)
+            config.set('work','framerate',str(framerate))
 #Step 2
 
     command = f'ffmpeg -i "{work_file}" -af silencedetect=noise={noisethreshold}dB:d=1 -nostats -hide_banner -f null -'
@@ -214,8 +214,11 @@ for inputfile in sys.argv[1:]:
     EDLfilename=f"{file_path}.edl"
     
     text_file = open(EDLfilename, "w")
-    EDLheader=f"TITLE:  {filepath}\nFCM: NON - DROP FRAME\n\n"
-
+    if(framerate.is_integer()):
+        EDLheader=f"TITLE:  {file_path}\nFCM: NON - DROP FRAME\n\n"
+    else:    
+        EDLheader=f"TITLE:  {file_path}\nFCM: DROP FRAME\n\n"
+        
     writtenbytes=text_file.write(EDLheader+EDLoutput)
     text_file.close()
     
