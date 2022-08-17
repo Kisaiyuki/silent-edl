@@ -25,8 +25,10 @@ noise threshold from an already published stream.
 
 if you need FFMPEG for Windows: 
   https://www.gyan.dev/ffmpeg/builds/
+  
 if you need python for Windows: 
   https://www.python.org/downloads/release/python-3713/
+  
 It may work with later versions of ffmpeg or python, but the developer
 has only used Python 3.7 and bleeding-edge builds of ffmpeg 5.x
 
