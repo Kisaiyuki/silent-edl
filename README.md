@@ -37,8 +37,9 @@ if you do not know how to use or install python. You will need FFMPEG,
 place it in the same directory or in your path.
 
 The EDL's generated have only been tested in Davinci Resolve Studio 18
-Davinci Resolve is also available for free
-https://www.blackmagicdesign.com/products/davinciresolve
+
+Davinci Resolve is also available for free: 
+  https://www.blackmagicdesign.com/products/davinciresolve
 
 EDL's should also work in Final Cut and Adobe Premiere
 
@@ -65,3 +66,6 @@ noisethreshold = -60.0
 ; can be reused
 framerate = 60.0 
 ```
+
+A demonstration of how to use is here:
+https://youtu.be/Ga8VQINrLAQ
