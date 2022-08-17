@@ -171,7 +171,6 @@ for inputfile in sys.argv[1:]:
     #this could also be done as one step, but appears to run 10x slower.
     if os.path.exists(work_file) is False:
         command = f'ffmpeg -i "{file_path}" -map 0:a:{track} -ac 1 -acodec pcm_s16le -y -ar 48000 -hide_banner "{work_file}"'
-        os.system(command)
         u = subprocess.Popen(command,stderr=subprocess.PIPE)
         utext=u.stderr.read()
         retcode = u.wait()
